@@ -28,8 +28,12 @@ DEBUG = True
 
 
 # Allow all hosts for development and CORS
+# Allow Codespace and localhost for development
 import os
-ALLOWED_HOSTS = ['*']
+CODESPACE_NAME = os.environ.get('CODESPACE_NAME')
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+if CODESPACE_NAME:
+    ALLOWED_HOSTS.append(f'{CODESPACE_NAME}-8000.app.github.dev')
 # Application definition
 
 AUTH_USER_MODEL = 'octofit_tracker.User'
