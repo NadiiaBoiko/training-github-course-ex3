@@ -8,17 +8,15 @@ class UserAdmin(admin.ModelAdmin):
 @admin.register(Team)
 class TeamAdmin(admin.ModelAdmin):
     list_display = ('name', 'created_at')
-    filter_horizontal = ('members',)
 
 @admin.register(Activity)
 class ActivityAdmin(admin.ModelAdmin):
-    list_display = ('user', 'activity_type', 'duration', 'calories_burned', 'date', 'team')
+    list_display = ('user_id', 'activity_type', 'duration', 'calories_burned', 'date', 'team_id')
 
 @admin.register(Leaderboard)
 class LeaderboardAdmin(admin.ModelAdmin):
-    list_display = ('team', 'total_points')
+    list_display = ('team_id', 'total_points')
 
 @admin.register(Workout)
 class WorkoutAdmin(admin.ModelAdmin):
     list_display = ('name', 'created_at')
-    filter_horizontal = ('suggested_for',)
