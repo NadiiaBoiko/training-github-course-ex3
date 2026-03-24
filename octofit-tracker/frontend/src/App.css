@@ -1,0 +1,109 @@
+
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #22223b;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%) !important;
+  box-shadow: 0 2px 8px rgba(58,134,255,0.1);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbar-brand img {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #ffbe0b !important;
+}
+
+.container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(131,56,236,0.08);
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h2, .display-4 {
+  color: #3a86ff;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  background: #f1f1fb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+th {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+  color: #fff;
+  font-weight: 600;
+}
+tr:nth-child(even) {
+  background: #e0e7ff;
+}
+tr:hover {
+  background: #ffbe0b33;
+}
+td, th {
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(58,134,255,0.08);
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #8338ec 0%, #3a86ff 100%);
+  color: #ffbe0b;
+}
+
+a, .App-link {
+  color: #3a86ff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover, .App-link:hover {
+  color: #ff006e;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(58,134,255,0.08);
+  border: none;
+  margin-bottom: 2rem;
+}
+.card-header {
+  background: linear-gradient(90deg, #3a86ff 0%, #8338ec 100%);
+  color: #fff;
+  font-weight: 600;
+}
+.modal-content {
+  border-radius: 16px;
+}
+.modal-header {
+  background: #3a86ff;
+  color: #fff;
+}
+.form-control:focus {
+  border-color: #8338ec;
+  box-shadow: 0 0 0 0.2rem #8338ec33;
+}
+.form-label {
+  color: #3a86ff;
+  font-weight: 600;
+}
